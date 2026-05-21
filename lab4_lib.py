@@ -62,7 +62,6 @@ test_loss, test_acc = model.evaluate(x_test, y_test, verbose=0)
 print(f"\nTest accuracy : {test_acc*100:.2f}%")
 print(f"Test loss     : {test_loss:.4f}")
 
-# ── Confusion matrix + classification report (sklearn) ──────────────────────
 all_preds = np.argmax(model.predict(x_test), axis=1)
 
 print("\nConfusion matrix (строки = истинный класс, столбцы = предсказанный):")
@@ -78,7 +77,6 @@ plt.tight_layout()
 plt.savefig("lenet5_keras_confusion_matrix.png", dpi=120)
 plt.show()
 print("Saved lenet5_keras_confusion_matrix.png")
-# ────────────────────────────────────────────────────────────────────────────
 
 
 fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(12, 4))

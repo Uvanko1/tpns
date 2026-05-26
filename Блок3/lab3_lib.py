@@ -16,7 +16,7 @@ from torch.optim import Adam
 from torch.optim.lr_scheduler import ReduceLROnPlateau
 
 CFG = dict(
-    data_path   = 'household_power_consumption.txt',
+    data_path   = 'household_power_consumption_small.txt',
     n_rows      = 50000,
     seq_len     = 24,
     batch_size  = 512,

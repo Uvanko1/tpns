@@ -375,7 +375,7 @@ def print_table(results):
 
 
 if __name__ == '__main__':
-    DATA_PATH = 'household_power_consumption.txt'
+    DATA_PATH = 'household_power_consumption_small.txt'
     N_ROWS  = 5_000
     SEQ_LEN = 32
     HIDDEN  = 24
